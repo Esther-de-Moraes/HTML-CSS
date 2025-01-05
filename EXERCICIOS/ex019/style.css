@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(170, 222, 170);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1.link{
+    color: rgb(172, 84, 84)
+    ;
+    text-align: center;
+    text-decoration: underline;
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(51, 81, 51) ;
+    color: white;
+}
+h1{
+color: rgb(3, 121, 3);;
+}
+h2{
+color: rgb(85, 135, 85);
+}
+.basico{
+    color: rgb(131, 135, 85);
+}
+.intermedio{
+    color: rgb(85, 85, 135);
+}
+.avancado{
+    color: rgb(135, 87, 85);
+}
+.especial:hover{
+    color:  rgb(172, 84, 84);
+    background-color: black;
+    text-decoration: none;
+}
+.especial::before{
+    container:'☚' ;
+    font-weight: lighter;
+}
+.especial::after{
+    content:'☛' ;
+    font-weight: lighter;
+}
+.especial{
+    color:rgb(172, 84, 84) ;
+}

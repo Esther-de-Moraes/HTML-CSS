@@ -8,13 +8,19 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: #676666;
         }
         td, th{
             border: 1px solid black;
             font-weight: bold;
             padding: 10px;
-            text-align: center; /*alinhamento do texto horizontal*/
+            text-align: center; /* alinhamento do texto horizontal */
         }
         thead{
             background-color: #676666d4;
@@ -30,6 +36,9 @@
         tfoot{
             background-color: #676666;
             color: white;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: #b5b2b2df;
         }
     </style>
 </head>

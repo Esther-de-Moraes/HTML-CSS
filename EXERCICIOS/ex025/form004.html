@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="form001.php" method="post">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required minlength="5" maxlength="30" size="20" placeholder="nome completo" autocomplete="name">
+            <p>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required autocomplete="email" placeholder="seuemail@exemplo.com">
+            </p>
+            <p>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" required autocomplete="tel" placeholder="(99) 9999-9999" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}">
+            </p>
+        </fieldset>
+        <!-- estudar mais sobre regex-->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

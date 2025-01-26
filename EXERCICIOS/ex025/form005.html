@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action="form001.php" method="post">
+        <fieldset>
+            <!-- sempre o radio tem q ter o mesmo name-->
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" id="masc" value="masculino">
+            <label for="masc">masculino</label>
+            <input type="radio" name="Sexo" id="fem" value="feminino" checked> 
+            <label for="fem">feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esporte favoritos</legend>
+            <input type="checkbox" name="esfut" id="esfut" value="futebol" checked>
+            <label for="esfut">futebol</label>
+            <input type="checkbox" name="esbas" id="esbas" value="basquete">
+            <label for="esbas">basquete</label> 
+            <input type="checkbox" name="esvolei" id="esvolei" value="volei">
+            <label for="esvolei">volei</label>
+            <input type="checkbox" name="esnata" id="esnata" value="natacao">
+            <label for="esnata">natação</label>
+
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
